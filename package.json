@@ -1,0 +1,30 @@
+{
+  "name": "dls---2027---lego",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This repository is the local sandbox for building the multi-brand AI LLM design system from scratch.",
+  "type": "module",
+  "scripts": {
+    "generate:token-docs": "node ./scripts/generate-token-docs.mjs",
+    "storybook": "npm run generate:token-docs && storybook dev -p 6006 --no-open",
+    "build-storybook": "npm run generate:token-docs && storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.3.5",
+    "@storybook/addon-docs": "^10.3.5",
+    "@storybook/react-vite": "^10.3.5",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "storybook": "^10.3.5",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8"
+  }
+}

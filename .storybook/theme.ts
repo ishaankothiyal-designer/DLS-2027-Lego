@@ -1,0 +1,27 @@
+import { create } from 'storybook/theming';
+
+export const storybookTheme = create({
+  base: 'light',
+  brandTitle: 'Lego DLS 2027',
+  colorPrimary: '#375dfb',
+  colorSecondary: '#375dfb',
+  appBg: '#edf1f7',
+  appContentBg: '#f8fafd',
+  appPreviewBg: '#ffffff',
+  appBorderColor: '#d7deea',
+  appBorderRadius: 20,
+  fontBase: '"Avenir Next", "Segoe UI Variable", "Segoe UI", sans-serif',
+  fontCode: '"IBM Plex Mono", "SFMono-Regular", monospace',
+  textColor: '#14213d',
+  textInverseColor: '#f8fbff',
+  barTextColor: '#56637a',
+  barSelectedColor: '#14213d',
+  barHoverColor: '#0f172a',
+  barBg: '#f5f7fb',
+  inputBg: '#ffffff',
+  inputBorder: '#cfd7e5',
+  inputTextColor: '#14213d',
+  inputBorderRadius: 999,
+  booleanBg: '#d8e3ff',
+  booleanSelectedBg: '#375dfb',
+});
