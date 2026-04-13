@@ -92,7 +92,7 @@ export interface MetricToken {
 
 export interface TokenDocsData {
   meta: {
-    generatedAt: string;
+    generatedAt?: string;
     brands: BrandName[];
     collectionSummary: CollectionSummary[];
   };

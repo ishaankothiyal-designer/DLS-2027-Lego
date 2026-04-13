@@ -22,6 +22,14 @@ This repository is the local sandbox for building the multi-brand AI LLM design 
 - [memory/token-architecture.md](./memory/token-architecture.md)
 - [memory/workflows/figma-github-storybook.md](./memory/workflows/figma-github-storybook.md)
 
+## GitHub Setup
+
+- Repository: [ishaankothiyal-designer/DLS-2027-Lego](https://github.com/ishaankothiyal-designer/DLS-2027-Lego)
+- Default branch: `main`
+- CI: GitHub Actions validates Storybook builds on every push and pull request
+- Docs publishing: Storybook deploys from `main` to GitHub Pages
+- Expected docs URL: [ishaankothiyal-designer.github.io/DLS-2027-Lego](https://ishaankothiyal-designer.github.io/DLS-2027-Lego/)
+
 ## Current Focus
 
 The repo currently documents:

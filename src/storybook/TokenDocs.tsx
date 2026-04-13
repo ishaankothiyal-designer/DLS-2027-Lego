@@ -94,10 +94,12 @@ function DocsShell(props: {
   summary: DocsSummaryItem[];
   children: ReactNode;
 }) {
-  const generatedAt = new Date(tokenDocsData.meta.generatedAt).toLocaleString(undefined, {
-    dateStyle: 'medium',
-    timeStyle: 'short',
-  });
+  const generatedLabel = tokenDocsData.meta.generatedAt
+    ? new Date(tokenDocsData.meta.generatedAt).toLocaleString(undefined, {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+      })
+    : 'from committed token sources';
 
   return (
     <div className="docs-shell" style={docsShellStyle(props.brand)}>
@@ -126,7 +128,7 @@ function DocsShell(props: {
                 </article>
               ))}
             </div>
-            <p className="docs-hero__timestamp">Generated {generatedAt}</p>
+            <p className="docs-hero__timestamp">Generated {generatedLabel}</p>
           </div>
         </aside>
       </header>

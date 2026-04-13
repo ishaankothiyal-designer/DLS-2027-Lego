@@ -409,7 +409,6 @@ function main() {
 
   const docsData = {
     meta: {
-      generatedAt: new Date().toISOString(),
       brands,
       collectionSummary: store.full.collections.map((collection) => ({
         name: collection.name,
